@@ -1,11 +1,10 @@
-package org.example;
+package org.example.AlertsFrameWindowsCardsPages.AlertsPages;
 
+import org.example.AlertsFrameWindowsCardsPages.AlertsFrameWindowsCard;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import java.util.Collection;
-
-public class AlertsPage extends AlertsFrameWindowsCard{
+public class AlertsPage extends AlertsFrameWindowsCard {
     private final By alertButton = By.id("alertButton");
     private final By promptAlertButton = By.id("promtButton");
     public void clickPromptAlertButton(){

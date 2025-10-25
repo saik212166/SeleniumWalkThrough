@@ -1,8 +1,7 @@
 package Tests;
 
-import org.example.FormsPage;
-import org.example.PracticeFormPage;
-import org.openqa.selenium.By;
+import org.example.FormsCardPages.FormsPage;
+import org.example.FormsCardPages.PracticeFormPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

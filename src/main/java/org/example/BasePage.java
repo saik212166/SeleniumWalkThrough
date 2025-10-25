@@ -28,4 +28,6 @@ public class BasePage {
         WebElement el = find(locator);
         el.sendKeys(Keys.ENTER);
     }
+
+
 }

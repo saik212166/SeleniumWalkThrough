@@ -1,14 +1,14 @@
-package org.example;
+package org.example.AlertsFrameWindowsCardsPages.WindowsPages;
 
 import Utility.JavaScriptUtility;
 import Utility.SwitchToUtility;
 import Utility.Utilities;
+import org.example.AlertsFrameWindowsCardsPages.AlertsFrameWindowsCard;
 import org.openqa.selenium.By;
 
-import java.sql.SQLOutput;
 import java.util.Set;
 
-public class BrowserWindowsPage extends AlertsFrameWindowsCard{
+public class BrowserWindowsPage extends AlertsFrameWindowsCard {
     private final By windowButton = By.id("windowButton");
     public void clickNewWindowButton(){
         JavaScriptUtility.scrollingOnWebPage(windowButton);

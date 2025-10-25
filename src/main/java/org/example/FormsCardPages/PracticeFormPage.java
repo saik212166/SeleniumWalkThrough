@@ -1,4 +1,4 @@
-package org.example;
+package org.example.FormsCardPages;
 
 import Utility.JavaScriptUtility;
 import org.openqa.selenium.By;

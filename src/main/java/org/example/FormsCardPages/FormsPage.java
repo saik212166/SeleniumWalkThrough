@@ -1,11 +1,11 @@
-package org.example;
+package org.example.FormsCardPages;
 
 import Utility.JavaScriptUtility;
-import Utility.Utilities;
+import org.example.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-public class FormsPage extends BasePage{
+
+public class FormsPage extends BasePage {
     WebDriver driver  = BasePage.driver;
     private By locator = By.xpath("//span[text() = 'Practice Form']");
 

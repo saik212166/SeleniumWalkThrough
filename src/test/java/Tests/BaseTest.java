@@ -2,12 +2,16 @@ package Tests;
 
 import Utility.Utilities;
 import org.example.*;
+import org.example.AlertsFrameWindowsCardsPages.AlertsFrameWindowsCard;
+import org.example.AlertsFrameWindowsCardsPages.AlertsPages.AlertsPage;
+import org.example.AlertsFrameWindowsCardsPages.WindowsPages.BrowserWindowsPage;
+import org.example.ElementsPages.DynamicPropertiesPage;
+import org.example.ElementsPages.ElementsCard;
+import org.example.FormsCardPages.FormsPage;
+import org.example.FormsCardPages.PracticeFormPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
@@ -20,6 +24,8 @@ public class BaseTest {
     AlertsFrameWindowsCard alertsFrameWindowsCard;
     AlertsPage alertsPage;
     BrowserWindowsPage browserWindowsPage;
+    ElementsCard elementsCard;
+    DynamicPropertiesPage dynamicPropertiesPage;
 
     @BeforeTest
     public void setUp(){
@@ -34,6 +40,8 @@ public class BaseTest {
         alertsFrameWindowsCard = new AlertsFrameWindowsCard();
         alertsPage = new AlertsPage();
         browserWindowsPage = new BrowserWindowsPage();
+        elementsCard = new ElementsCard();
+        dynamicPropertiesPage = new DynamicPropertiesPage();
         driver.manage().window().maximize();
         driver.get("https://demoqa.com/");
     }
