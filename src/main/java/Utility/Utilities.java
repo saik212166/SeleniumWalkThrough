@@ -8,4 +8,7 @@ public class Utilities {
     public void setUtilityDriver(){
         driver = BasePage.driver;
     }
+    public static String getUrl(){
+        return driver.getCurrentUrl();
+    }
 }

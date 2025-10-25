@@ -11,7 +11,7 @@ public class AlertsPageTest extends BaseTest{
         alertsPage.clickPromptAlertButton();
         alertsPage.sendPrompt("Sai Kalyan");
         alertsPage.alertAccept();
-        Assert.assertFalse(alertsPage.getTextofResultPrompt().contains("Sai") );
+        Assert.assertFalse(alertsPage.getTextOfResultPrompt().contains("Sai") );
 
 
 

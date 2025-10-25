@@ -19,6 +19,7 @@ public class BaseTest {
     Utilities utilities;
     AlertsFrameWindowsCard alertsFrameWindowsCard;
     AlertsPage alertsPage;
+    BrowserWindowsPage browserWindowsPage;
 
     @BeforeTest
     public void setUp(){
@@ -32,6 +33,7 @@ public class BaseTest {
         practiceFormPage = new PracticeFormPage();
         alertsFrameWindowsCard = new AlertsFrameWindowsCard();
         alertsPage = new AlertsPage();
+        browserWindowsPage = new BrowserWindowsPage();
         driver.manage().window().maximize();
         driver.get("https://demoqa.com/");
     }
